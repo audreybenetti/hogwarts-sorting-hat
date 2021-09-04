@@ -1,8 +1,6 @@
 package br.com.letscode.aluno;
 
-import br.com.letscode.casa.Casa;
 import com.fasterxml.jackson.annotation.JsonProperty;
-import com.google.gson.annotations.SerializedName;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;

@@ -1,7 +1,7 @@
 package br.com.letscode.casa;
 
 import br.com.letscode.aluno.Aluno;
-import lombok.*;
+import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 
 @AllArgsConstructor
@@ -15,7 +15,7 @@ public class CasaService {
         return sorteioRepository.getSorteio().getIdCasa();
     }
 
-    public Casa exibirCasa(String casaId){
-        return casaRepository.casa(casaId);
+    public Casa exibirCasa(Aluno aluno){
+        return casaRepository.casa(aluno.getIdCasa());
     }
 }

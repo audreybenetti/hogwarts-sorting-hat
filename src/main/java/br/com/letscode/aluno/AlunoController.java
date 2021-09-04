@@ -1,5 +1,6 @@
 package br.com.letscode.aluno;
 
+import io.reactivex.Observable;
 import io.reactivex.Single;
 import lombok.AllArgsConstructor;
 import org.springframework.http.HttpStatus;
@@ -18,16 +19,15 @@ public class AlunoController {
         return alunoService.adicionarAluno(alunoRequest);
     }
 
-   /*@GetMapping("/{id}")
-    public Single<AlunoResponse> buscarAlunoId(@PathVariable int id){
-        return alunoService.buscarAlunoId(id);
+   @ResponseStatus(HttpStatus.OK)
+   @GetMapping("/buscar")
+    public Single<AlunoResponse> buscarAlunoNome(@RequestParam String nome){
+        return alunoService.buscarAlunoNome(nome);
     }
 
+    @ResponseStatus(HttpStatus.OK)
     @GetMapping
-    public Observable<AlunoResponse> exibirAlunos ()  {
-            return alunoService.exibirAlunos();
+    public Observable<AlunoResponse> exibirAlunos() {
+        return alunoService.exibirAlunos();
     }
-    */
-
-
 }

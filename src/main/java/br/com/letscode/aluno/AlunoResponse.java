@@ -15,4 +15,5 @@ public class AlunoResponse {
     private int id;
     private String nome;
     private Casa casa;
+
 }
