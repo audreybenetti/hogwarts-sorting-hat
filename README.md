@@ -1,5 +1,8 @@
 <h2>hogwarts-sorting-hat</h2>
-Exercício para implementação de programação reativa utilizando a biblioteca RxJava, aplicação SpringBoot com banco de dados e as seguintes funcionalidades:
+O chapéu seletor é um artefato consciente de Hogwarts que determina magicamente para qual das quatro casas cada novo aluno vai ser mandado, essa aplicação foi idealizada para exercício de programação reativa utilizando a biblioteca RxJava.
+<ul></ul>
+<i>Na programação reativa uma determinada fonte de dados dinâmica ou estática é definida, ao ser executada propaga seus resultados através de um fluxo de dados e notifica todos os receptores. Nesse paradigma os eventos ocorrem de forma assíncrona, ou seja, paralelamente sem precisar seguir nenhuma ordem cronológica e linear, se ocorrer um erro o sistema não irá travar, ele reconhece que é possível continuar e executa outras tarefas em paralelo enquanto espera.</i>
+
   
 <h3>Adicionando um aluno em Hogwarts:</h3>
 <li>id</li>
